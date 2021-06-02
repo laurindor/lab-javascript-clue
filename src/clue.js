@@ -119,11 +119,15 @@ return misteryCards;
 }
 
 
-
-
 // ITERATION 3
 
-function revealMystery() {}
+function revealMystery(misteryCards) {
+  let yourTurn = `${misteryCards.suspect.firstName} ${misteryCards.suspect.lastName} killed Mr. Boddy using the ${misteryCards.weapon.name} in the ${misteryCards.room.name}!`
+  return yourTurn; 
+}
+
+//definir una variable donde meter la frase para meter el return y luego le damos un valor, que es la frase
+
 
 
 
