@@ -109,10 +109,17 @@ function selectRandom(arrayCards) {
 }
 
 
-function pickMystery() {}
-let randomSuspect = selectRandom (suspectsArray)
-let randomWeapon = selectRandom (weaponsArray)
-let randomRoom = selectRandom (roomsArray)
+function pickMystery() {
+  let misteryCards = {
+  suspect : selectRandom(suspectsArray),
+  weapon : selectRandom(weaponsArray),
+  room : selectRandom(roomsArray)
+}
+return misteryCards; 
+}
+
+
+
 
 // ITERATION 3
 
