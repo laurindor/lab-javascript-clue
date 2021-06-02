@@ -103,10 +103,16 @@ const weaponsArray = [
 
 // ITERATION 2
 
-function selectRandom() {}
+function selectRandom(arrayCards) {
+  let randomCard = arrayCards[Math.floor(Math.random()* arrayCards.length)];
+  return randomCard;
+}
+
 
 function pickMystery() {}
-
+let randomSuspect = selectRandom (suspectsArray)
+let randomWeapon = selectRandom (weaponsArray)
+let randomRoom = selectRandom (roomsArray)
 
 // ITERATION 3
 
